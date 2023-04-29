@@ -1,0 +1,41 @@
+.product-s {
+  .container {
+    display: flex;
+    align-items: center;
+    padding: 6em 1em;
+        justify-content: space-between;
+    
+    img{
+        max-width: 50em;
+        max-height: 50em;
+    }
+    .product-txt-s{
+        display: flex;
+        flex-direction: column;
+        gap: 2em;
+        align-items: start;
+        span{
+            font-size: 3em;
+            color: red;
+        }
+        h1{
+            font-size: 6em;
+            color: cornflowerblue;
+
+        }
+        p{
+            max-width: 30em;
+            font-size: 2.5em;
+            color: gray;
+        }
+        button{
+            padding: .4em .8em;
+            font-size: 3em;
+            background: cornflowerblue;
+            color: #fff;
+            border-radius: .5em;
+        }
+
+    }
+  }
+}

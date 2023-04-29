@@ -1,6 +1,8 @@
+import { useState } from "react"
 import Nav from "../../Components/Nav"
 
 const MainPage = () => {
+
   return (
     <div>
       <Nav/>

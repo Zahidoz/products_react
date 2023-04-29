@@ -2,7 +2,7 @@ import './style.scss'
 import {useNavigate} from 'react-router-dom'
 
 const ProductCard = ({product}) => {
-  const navigate = useNavigate()
+  const navigate = useNavigate()  
 
   const BtnAdd = async() => {
     let x = await localStorage.setItem("productId",product.id)

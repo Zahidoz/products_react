@@ -1,9 +1,10 @@
 import { useEffect, useState } from "react";
+import Nav from '../../Components/Nav'
+import './style.scss'
 
 const ProductPage = () => {
   const [product, setProduct] = useState({});
-
-  const getProductById = async() => {
+  const getProductById = async () => {
     let x = await localStorage.getItem("productId");
     fetch(`https://fakestoreapi.com/products/${x}`)
       .then((res) => res.json())
@@ -11,16 +12,29 @@ const ProductPage = () => {
   };
 
   useEffect(() => {
-    getProductById()
-  },[]);
+    getProductById();
+  }, []);
+
+  const AddItemToBasket = () => {
+     
+  }
 
   return (
     <div>
-      <img src={product.image} />
-      <h1>{product.title}</h1>
-      <h1>{product.description}</h1>
-      <h1>{product.price}</h1>
-      <h1>{product.category}</h1>
+      <Nav/>
+      <div className="product-s">
+        <div className="container">
+          <img src={product.image} />
+          <div className="product-txt-s">
+            <span>{product.category}</span>
+            <h1>{product.title}</h1>
+            <p>{product.description}</p>
+            <button onClick={AddItemToBasket}>
+              Add To Card {product.price} $
+            </button>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };

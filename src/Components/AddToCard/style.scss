@@ -1,0 +1,81 @@
+.basket-c{
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 2em;
+    width: 30em;
+    padding: 2em;
+    background: #ffffffc8;
+    backdrop-filter: blur(10px);
+    border-left: 1px solid rgba(0, 0, 0, 0.423);
+    border-right: 1px solid rgba(0, 0, 0, 0.423);
+    height: 100vh;
+    button.close{
+
+    }
+    h1{
+        color: cornflowerblue;
+        font-size: 2em;
+        padding-bottom: .5em;
+        border-bottom: .01em solid rgba(0, 0, 0, 0.181);
+    }
+    .basketCard{
+        width: 100%;
+        border: 1px solid gray;
+        padding: 1em;
+      .basket-info{
+        display: flex;
+        gap: 2em;
+        margin-bottom: 1em;
+        img{
+            max-width: 6em;
+            max-height: 6em;
+        }
+        .p-txt{
+            p{
+                color: red;
+                font-size: 1.5em;
+                margin-bottom: .3em;
+            }
+            h3{
+                font-size: 2.5em;
+                color: cornflowerblue;
+            }
+        }
+      }  
+      .basket-pricing{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 1em;
+        .count-s{
+            display: flex;
+            align-items: center;
+            gap: .5em;
+            button{
+                padding: .3em;
+                border: 1px solid cornflowerblue;
+                background: none;
+                color: cornflowerblue;
+                padding: 0 .5em;
+                transition: .2s;
+                &:hover{
+                    background: cornflowerblue;
+                    color: #fff;
+                }
+            }
+            span{
+                color: black;
+                font-size: 2.5em;
+            }
+        }
+        h3{
+            color: red;
+            font-size: 3em;
+        }
+      }
+    }
+}
