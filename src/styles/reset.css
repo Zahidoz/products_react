@@ -1,0 +1,19 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+}
+html{
+    font-size: 10px;
+}
+button{
+    cursor: pointer;
+}
+.container{
+    margin: 0 auto;
+    max-width: 144em;
+}

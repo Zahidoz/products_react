@@ -1,0 +1,30 @@
+nav{
+    .container{
+        padding: 2em 4em;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        h1{
+            font-size: 3em;
+            color: rgb(46, 44, 44);
+            letter-spacing: .01em;
+        }
+        .nav-links{
+            display: flex;
+            align-items: center;
+            gap: 2em;
+            .link{
+                font-size: 2em;
+                color: rgb(135, 135, 135);
+                letter-spacing: .1em;
+            }
+            button{
+                font-size: 1.9em;
+                border-radius: .3em;
+                padding: .4em .8em;
+                background: cornflowerblue;
+                color: #fff;
+            }
+        }
+    }
+}
